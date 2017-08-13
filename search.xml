@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[搭建博客]]></title>
-    <url>%2F2017%2F08%2F12%2F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[优秀的人，不是不合群，而是他们合群的人里面没有你 1[rectangle setX: 10 y: 10 width: 20 height: 20];]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[text]]></title>
-    <url>%2F2017%2F08%2F12%2Ftext%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2017%2F08%2F12%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[基于Github和Hexo搭建博客----本地Hexo博客搭建]]></title>
+    <url>%2F2017%2F08%2F13%2F1%2F</url>
+    <content type="text"><![CDATA[优秀的人，不是不合群，而是他们合群的人里面没有你 正常都应该讲一讲为什么搭建博客，不过既然您能看见这篇文章，就说明你想搭建一个自己的博客，无论自己记录自己的东西，或是为了显得高大上。那就不废话了，进入正题。 其实教大家搭建博客的文章很多，讲的都不错，本来不打算写的，不过既然搭建了，正好刚学会就换了个电脑，还需从头搭建一边，就顺便写个记录下，权当第一篇博客了。正式进入正题，哈哈哈哈哈！！！ 我的博客是基于github和hexo搭建的，至于为什么这么配置呢？网上这个教程很多，so…你晓得。在这里要非常感谢吴小龙同学的手把手教你建github技术博客by hexo,差不多就是按照他的这个文章，搭建起来的。 #第一步 环境准备 ##安装 Git #####windows系统的：下载 msysgit 并执行即可完成安装。 #####MAC：用来将本地Hexo内容提交到Github上。Xcode自带Git，这里不再赘述。如果没有Xcode可以参考Hexo官网上的安装方法。也可以通过在这里下载https://git-scm.com/download/mac ##安装Node.js要使用hexo，需要先下载Node.js，选择左边的就好了，然后一路安装。 ##安装Hexo 利用 npm 命令即可安装。 #####windows： 在任意位置点击鼠标右键，选择Git bash1npm install -g hexo 问题:npm ERR! registry error parsing json 错误可能需要设置 npm 代理，执行命令1npm config set registry http://registry.cnpmjs.org hexo:command not found删除刚刚安装的 npm 目录，重新执行命令：1npm install -g hexo 来安装 hexo。 #####mac： 终端执行如下命令：1$ sudo npm install -g hexo 输入管理员密码（Mac登录密码）即开始安装 (sudo:linux系统管理指令 注意坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。 ##初始化HEXO #####windows:安装完成后，在你喜爱的文件夹下（如 H:\hexo），执行以下指令(在 H:\hexo 内点击鼠标右键，选择 Git bash)，Hexo 即会自动在目标文件夹建立网站所需要的所有文件。1hexo init blog blog是你建立的文件夹名称安装依赖包1npm install #####mac: 终端cd到一个你选定的目录，执行hexo init命令：1$ hexo init blog blog是你建立的文件夹名称。cd到blog文件夹下，执行如下命令，安装npm：1$ npm install #####本地博客就搭建好了！！！！！执行如下命令，开启hexo服务器：12hexo generatehexo server 此时，浏览器中打开网址http://localhost:4000，能看到如下页面 问题:执行 hexo server 提示找不到该指令解决办法：在 Hexo 3.0 后 server 被单独出来了，需要安装 server，安装的命令如下：1npm install hexo -server --save 安装此 server 后再试，问题解决 再次感谢吴小龙同学]]></content>
+      <categories>
+        <category>搭建博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
   </entry>
 </search>
